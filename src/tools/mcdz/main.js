@@ -42,7 +42,12 @@ const message = (text) => {
 
 const validate = () => {
     if (input_1.value.length === 0 || input_2.value.length === 0) {
-        alert("Ingrese dos números enteros");
+        alert("Ingrese dos números enteros no nulos");
+        return false;
+    }
+
+    if (input_1.value === '0' || input_2.value === '0') {
+        alert("Ingrese dos números enteros no nulos");
         return false;
     }
 
