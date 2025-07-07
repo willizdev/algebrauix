@@ -15,3 +15,47 @@
     font-weight: 500;
     font-style: normal;
 }
+
+/* templates */
+
+#header {
+    width: 100%;
+    height: auto;
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header img {
+    height: 5em;
+    width: auto;
+}
+
+#footer {
+    padding: 3em;
+}
+
+#footer p {
+    text-align: center;
+    font-weight: 400;
+}
+
+#github {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    background-color: #000;
+    padding: 6px 5px 3px 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#github:hover {
+    bottom: 2.5em;
+}
+
+#github img {
+    height: 2.5em;
+    width: auto;
+}

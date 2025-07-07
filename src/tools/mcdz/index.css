@@ -1,0 +1,89 @@
+#info, #calc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#info h1, #calc h1 {
+    margin-bottom: 1em;
+}
+
+#info p, #calc p {
+    font-weight: 400;
+    font-size: 1.2em;
+    margin: 0.5em;
+}
+
+#calc {
+    margin: 3em 0em;
+}
+
+#calc > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+#calc input {
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.5em;
+    width: 6em;
+    height: 3em;
+}
+
+#calc span {
+    font-size: 6em;
+    font-weight: 400;
+    margin: 0em 0.2em;
+}
+
+#submit {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #363636;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+}
+
+#sol-wrap.active {
+    display: flex;
+}
+
+#sol-wrap {
+    display: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 100vw;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+#sol {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 90%;
+    width: 60%;
+    padding: 3em;
+    text-align: center;
+    font-size: 1.3em;
+    overflow-y: auto;
+    line-height: 2;
+}

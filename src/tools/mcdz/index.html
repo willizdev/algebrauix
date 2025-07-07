@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MCD (enteros)</title>
+        <link rel="icon" href="../../assets/fx.svg">
+        <link rel="stylesheet" href="../../globals.css"> 
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <a href="../../index.html">
+                    <img src="../../assets/algebrauix.svg" alt="algebrauix">
+                </a>
+            </div>
+            <div id="info">
+                <h1>Máximo común divisor (números enteros)</h1>
+                <p>
+                    Para hallar el máximo común divisor de dos números enteros
+                    utilizaremos el Algoritmo de Euclides.
+                </p>
+                <p>
+                    <a href="../../docs/Algebra1-2017.pdf"><b>(Proposición 4.5.2.)</b></a>
+                </p>
+                <p>Sean a, b ∈ Z no ambos nulos, y sea k ∈ Z , entonces:</p>
+                <p>
+                    DivCom({a, b}) = DivCom({b, a - k · b}), y<br>
+                    DivCom+({a, b}) = DivCom+ ({b, a - k · b}).
+                </p>
+                <p>
+                    En particular, para todo k ∈ Z , (a : b) = (b : a - k · b).<br>
+                    Aplicando esto a rb (a) = a - k · b , se obtiene que (a : b) = (b : rb (a)) .
+                </p>
+            </div>
+            <div id="calc">
+                <h1>Resolución</h1>
+                <p>Ingrese dos números enteros</p>
+                <div>
+                    <span>(</span>
+                    <input id="in-1" type="number">
+                    <span>:</span>
+                    <input id="in-2" type="number">
+                    <span>)</span>
+                </div>
+                <button id="submit">Calcular</button>
+            </div>
+            <div id="sol-wrap">
+                <div id="sol"></div>
+            </div>
+            <div id="footer">
+                <p>Este proyecto está licenciado bajo los términos de la Liciencia MIT - Copyright (c) 2025 willizdev</p>
+            </div>
+             <div id="github">
+                <a href="https://github.com/willizdev/algebrauix">
+                    <img src="../../assets/github.svg" alt="repositorio">
+                </a>
+            </div>
+        </div>
+        <script defer src="main.js"></script>
+    </body>
+</html>
